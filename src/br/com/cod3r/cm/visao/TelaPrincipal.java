@@ -9,6 +9,7 @@ public class TelaPrincipal extends JFrame {
     public TelaPrincipal() throws HeadlessException {
         Tabuleiro tabuleiro = new Tabuleiro(16,30,50);
 
+        add(new PainelTabuleiro(tabuleiro));
         setTitle("Campo Minado Cod3R");
         setSize(690, 438);
         setLocationRelativeTo(null);
