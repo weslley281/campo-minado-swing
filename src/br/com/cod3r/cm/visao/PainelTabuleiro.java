@@ -1,2 +1,4 @@
-package br.com.cod3r.cm.visao;public class PainelTabuleiro {
+package br.com.cod3r.cm.visao;
+
+public class PainelTabuleiro {
 }

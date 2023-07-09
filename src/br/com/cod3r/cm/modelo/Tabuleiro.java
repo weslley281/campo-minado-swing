@@ -88,10 +88,9 @@ public class Tabuleiro implements CampoObservador {
 	@Override
 	public void eventoOcorreu(Campo campo, CampoEvento evento) {
 		if (evento == CampoEvento.EXPLODIR){
-			System.out.println("Perdeu");
+			mostrarMinas();
 			notificarObservadores(false);
 		}else if (objetivoAlcancado()){
-			System.out.println("Ganhou");
 			notificarObservadores(true);
 		}
 	}
